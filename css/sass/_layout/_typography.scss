@@ -1,0 +1,185 @@
+$base: 22px;
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'YL-Logos';
+    src:url('/typefaces/YL-Logos.eot');
+    src:url('/typefaces/YL-Logos.eot?#iefix') format('embedded-opentype'),
+        url('/typefaces/typefaces/YL-Logos.ttf') format('truetype'),
+        url('/typefaces/YL-Logos.woff') format('woff'),
+        url('/typefaces/YL-Logos.svg#YL-Logos') format('svg');
+}
+
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'franchiseregular';
+    src: url('/typefaces/franchise-bold-webfont.eot');
+    src: url('/typefaces/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/typefaces/franchise-bold-webfont.woff') format('woff'),
+         url('/typefaces/franchise-bold-webfont.ttf') format('truetype'),
+         url('/typefaces/franchise-bold-webfont.svg#franchiseregular') format('svg');
+}
+
+html, 
+body,
+input, 
+button {
+    color: $black;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: $base;
+}
+
+body,
+p, 
+h3, .h3,
+h4, .h4,
+h6, .h6 {
+   font-family: 'Titillium Web', sans-serif;
+}
+
+
+h1, .h1, 
+h2, .h2,
+h5, .h5 {
+    font-weight: normal;
+    font-family: "franchiseregular", Impact, "Arial Narrow", sans-serif;
+}
+
+h1, .h1, 
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+    text-transform: uppercase;
+}
+
+h3, .h3,
+h6, .h6 {
+    font-weight: 200;
+}
+
+h1, .h1 {
+    font-size: 114px;
+    line-height: 88px;
+}
+
+h2, .h2,
+h3, .h3 {
+    font-size: 51px;
+    line-height: 44px;
+}
+
+h4, .h4 {
+    font-weight: 300; // TODO: test this
+    font-size: $base;
+    line-height: $base;
+}
+
+h5, .h5 {
+    font-size: $base;
+}
+
+h6, .h6 {
+    margin-bottom: $base;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 15px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: $base;
+    line-height: 44px;
+    padding-left: $base - 3;
+    border-left: 3px solid $lightgray;
+}
+
+strong {
+    font-weight: 700;
+}
+
+hr {
+    margin: ($base - 1.5) 0;
+    border: none; 
+    border-bottom: 3px solid $black;
+}
+
+ul {
+    padding-left: $base * 2;
+}
+
+input[type="text"], textarea {
+    padding: (($base * 0.5) - 1) $base (($base * 0.5) - 2);
+    border: 1px solid $darkgray;
+}
+
+// LINKS
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+p a {
+    color: $red;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: $purple;
+    text-decoration: none;
+}
+
+
+// MARGINS
+h1, h2, h3, h4, h5, h6, p, blockquote, ul, li {
+    margin: 0 0 $base;
+}
+
+p:last-of-type,
+hgroup *, .hgroup * {
+    margin-bottom: 0;
+}
+
+
+// HELPER CLASSES 
+
+// text alignment
+.left {
+    text-align:left;
+}
+
+.center {
+    text-align:center;
+}
+
+.right {
+    text-align:right;
+}
+
+.lead {
+    font-size: $base;
+    line-height: $base * 2;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+// ampersand
+.amp {
+    font-style: italic; 
+    font-family: Baskerville, Palatino, 'Book Antiqua', serif;
+}

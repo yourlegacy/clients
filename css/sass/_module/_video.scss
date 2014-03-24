@@ -1,0 +1,50 @@
+.video-container {
+	position: relative;
+
+	.video-placeholder {	
+		position: relative;
+		padding-bottom: 54.25%;
+		padding-top: 22px;
+		height: 0;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.video-overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background: rgba($white,0.98);
+		display: none;
+		cursor: pointer;
+	}
+	
+	.video-overlay.active {
+		display: block;
+	}
+
+	.video-overlay.pre {
+		bottom: $base  * 7;
+		background: rgba($green,1) url(/images/wayne/wayne-simmonds-interview.jpg) no-repeat center center;
+		background-size: cover;
+		margin-top: $base;
+	}
+
+	.video-overlay .pre-roll, 
+	.video-overlay .post-roll {
+		display: none;
+	}
+
+	.video-overlay.pre .pre-roll, 
+	.video-overlay.post .post-roll {
+		display: inline-block;
+	}
+}
