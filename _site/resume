@@ -1,0 +1,5 @@
+# Start Script #
+
+# Jekyll and Compass
+jekyll serve --watch &
+sass --watch css/sass/all.scss:css/style.css --style compressed &
