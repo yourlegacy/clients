@@ -1,1 +1,4 @@
-../yourlegacy.github.io/_config.yml
+name: Your Legacy 
+baseurl: /
+url: http://clients.yourlegacy.co/
+permalink: /:title
